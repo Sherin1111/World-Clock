@@ -1,12 +1,12 @@
 function updateTime() {
-  //London
-  let londonElement = document.querySelector("#london");
-  if (londonElement) {
-    let londonDateElement = londonElement.querySelector(".date");
-    let londonTimeElement = londonElement.querySelector(".time");
-    let londonTime = moment().tz("Europe/London");
-    londonDateElement.innerHTML = londonTime.format("MMMM Do YYYY");
-    londonTimeElement.innerHTML = londonTime.format(
+  //Shanghai
+  let shanghaiElement = document.querySelector("#shanghai");
+  if (shanghaiElement) {
+    let shanghaiDateElement = shanghaiElement.querySelector(".date");
+    let shanghaiTimeElement = shanghaiElement.querySelector(".time");
+    let shanghaiTime = moment().tz("Asia/Shanghai");
+    shanghaiDateElement.innerHTML = shanghaiTime.format("MMMM Do YYYY");
+    shanghaiTimeElement.innerHTML = shanghaiTime.format(
       "h:mm:ss [<small>]A[</small>]"
     );
   }
